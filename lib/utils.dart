@@ -14,8 +14,11 @@ TextEditingController textage =TextEditingController(text: '21');
 TextEditingController textcourse =TextEditingController(text: 'flutter');
 TextEditingController textphone =TextEditingController(text: '9825198350');
 TextEditingController textaddress =TextEditingController(text: 'B-601 gokuldham app');
+TextEditingController textSearch =TextEditingController();
 
 List studentlist=[];
+Map search = {};
+bool isSearch = false;
 
 int listindex=0;
 String img='https://tse3.mm.bing.net/th?id=OIP.abbHwUGf7cWF1KrClYxa5AHaHa&pid=Api&P=0&h=180';
