@@ -37,14 +37,12 @@ class _AddStudentState extends State<AddStudent> {
               height: 40,
             ),
             GestureDetector(
-              onTap: () async{
+              onTap: () async {
                 ImagePicker imagePicker = ImagePicker();
-                XFile? xFile = await imagePicker.pickImage(
-                    source: ImageSource.gallery);
+                XFile? xFile =
+                    await imagePicker.pickImage(source: ImageSource.gallery);
                 photo = await xFile!.readAsBytes();
-                setState(() {
-
-                });
+                setState(() {});
               },
               child: Container(
                 height: 150,
@@ -54,8 +52,9 @@ class _AddStudentState extends State<AddStudent> {
                   shape: BoxShape.circle,
                   border: Border.all(color: black),
                   image: DecorationImage(
-                    image: photo == null ? NetworkImage(img) : MemoryImage(
-                        photo!),),
+                    image:
+                        photo == null ? NetworkImage(img) : MemoryImage(photo!),
+                  ),
                 ),
               ),
             ),
@@ -77,11 +76,11 @@ class _AddStudentState extends State<AddStudent> {
                   'course': textcourse.text,
                   'phone': textphone.text,
                   'address': textaddress.text,
-                  'image':photo,
+                  'image': photo,
                 };
                 studentlist.add(ram);
                 Navigator.of(context).pushReplacementNamed('/');
-                photo=null;
+                photo = null;
               },
               child: Container(
                 alignment: Alignment.center,

@@ -37,22 +37,25 @@ class _EditPageState extends State<EditPage> {
               height: 40,
             ),
             GestureDetector(
-              onTap: () async{
-                ImagePicker imagePicker=ImagePicker();
-                XFile? xFile=await imagePicker.pickImage(source: ImageSource.gallery);
-                studentlist[listindex]['image'] =await xFile!.readAsBytes();
-                setState(() {
-
-                });
+              onTap: () async {
+                ImagePicker imagePicker = ImagePicker();
+                XFile? xFile =
+                    await imagePicker.pickImage(source: ImageSource.gallery);
+                studentlist[listindex]['image'] = await xFile!.readAsBytes();
+                setState(() {});
               },
               child: Container(
                 height: 150,
                 width: 150,
                 decoration: BoxDecoration(
-                    color: bgcolor,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: black),
-                  image: DecorationImage(image: studentlist[listindex]['image']==null?NetworkImage(img):MemoryImage(studentlist[listindex]['image']),),
+                  color: bgcolor,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: black),
+                  image: DecorationImage(
+                    image: studentlist[listindex]['image'] == null
+                        ? NetworkImage(img)
+                        : MemoryImage(studentlist[listindex]['image']),
+                  ),
                 ),
               ),
             ),
@@ -76,7 +79,7 @@ class _EditPageState extends State<EditPage> {
                   'address': textaddress.text,
                   'image': studentlist[listindex]['image'],
                 };
-                studentlist[listindex]=ram;
+                studentlist[listindex] = ram;
                 Navigator.of(context).pushReplacementNamed('/');
               },
               child: Container(
