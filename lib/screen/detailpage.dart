@@ -1,6 +1,5 @@
 import 'package:erp_system/utils.dart';
 import 'package:flutter/material.dart';
-import 'package:image_picker/image_picker.dart';
 class Detailpage extends StatefulWidget {
   const Detailpage({super.key});
 
@@ -35,6 +34,9 @@ class _DetailpageState extends State<Detailpage> {
             studentlist.removeAt(listindex);
             Navigator.of(context).pushReplacementNamed('/');
           }, icon:  Icon(Icons.delete,color:bgcolor,),),
+          IconButton(onPressed: () {
+            Navigator.of(context).pushNamed('/pdf');
+          }, icon: Icon(Icons.picture_as_pdf,color: bgcolor,)),
         ],
         title: Text(
           'Detail Page',

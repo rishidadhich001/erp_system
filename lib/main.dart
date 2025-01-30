@@ -1,3 +1,4 @@
+import 'package:erp_system/pdf/pdf_screen.dart';
 import 'package:erp_system/screen/add_student.dart';
 import 'package:erp_system/screen/detailpage.dart';
 import 'package:erp_system/screen/edit_page.dart';
@@ -21,6 +22,7 @@ class Erpsystem extends StatelessWidget {
         '/add':(context)=>const AddStudent(),
         '/detail':(context)=> const Detailpage(),
         '/edit':(context)=>const EditPage(),
+        '/pdf':(context)=>const PdfScreen(),
       },
     );
   }
