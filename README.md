@@ -59,5 +59,10 @@ Once the app is running, you will be able to:
 - **Generate PDF**: Select a student and generate a PDF of their details. 📄
 
 ## Screenshots 📸
-
-Include screenshots of the app's UI here.
+<img src="https://github.com/user-attachments/assets/bf97f129-9b7b-4d08-b25f-e2d6660ec6b0" height=500px>
+<img src="https://github.com/user-attachments/assets/343a0396-a32a-4afe-8a6d-274b9840c78c" height=500px>
+<img src="https://github.com/user-attachments/assets/3e5e4a2b-efb0-4eff-bfed-507fb29976c1" height=500px>
+<img src="https://github.com/user-attachments/assets/e2e95f9f-1c1b-4339-b3d7-2692c36c37bc" height=500px>
+<img src="https://github.com/user-attachments/assets/9fc27f71-e191-43ee-baa0-20166d1bb6f5" height=500px>
+<img src="https://github.com/user-attachments/assets/a8d001d5-2d28-4508-8956-fc93aa5ed3f0" height=500px>
+<img src="https://github.com/user-attachments/assets/2ef0f178-b7b4-4401-bc4b-1933d081b0f3" height=500px>
